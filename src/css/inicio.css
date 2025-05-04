@@ -1,0 +1,43 @@
+.product-price {
+    font-weight: 700; /* menos negrita que 700 */
+    font-size: 1rem;
+    letter-spacing: px; /* más separación entre letras */
+    font-family: 'Inter', sans-serif; /* asegura que sea Inter */
+    color: #000;
+  }
+.card-title {
+    font-size: 0.85rem; /* más chico que fs-6 */
+    line-height: 1.2;
+    white-space: nowrap; /* para que no baje el emoji */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+
+.product-image {
+    margin-top: 4rem; /* o por ejemplo 20px */
+  }
+
+.old-price {
+    font-weight: 400;
+    font-size: 0.80rem;
+    letter-spacing: 0.4px;
+    color: #888;
+    text-decoration: line-through;
+}
+.logo-img {
+  max-width: 200px; /* o el tamaño que quieras */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .logo-img {
+    max-width: 120px;
+  }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> a1d9ef8e3502f6e1506a12a3ace5b0df671792c3
