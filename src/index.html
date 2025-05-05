@@ -10,24 +10,68 @@
   <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href=" css/inicio.css">
   <link rel="stylesheet" href="css/hoover.css">
+  <link rel="stylesheet" href="css/search.css">
 
-
-  
   <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100 mt-4" style="font-family: 'Inter', sans-serif;">
 
   <!-- HEADER -->
-  <header class="fixed-top bg-white shadow-sm">
-    <div class="container text-center py-4 pt-0 pb-0">
-      <a href="index.html" class="d-block w-100 h-100">
-        <img src="fotos/Logo deportivo  minimalista Negro y blanco.png" alt="Logo Nubez" class="logo-img ">      </a>
+<header class="fixed-top bg-white shadow-sm">
+  <div class="container py-2">
+    <div class="row align-items-center">
+      <div class="col-md-3 text-center text-md-start">
+        <a href="index.html" class="d-block">
+          <img src="fotos/Logo deportivo  minimalista Negro y blanco.png" alt="Logo Nubez" class="logo-img">
+        </a>
+      </div>
+      <div class="col-md-6 mt-2 mt-md-0">
+        <div class="search-container">
+          <form class="d-flex">
+            <input class="form-control me-2 search-input" type="search" placeholder="Buscar productos..." aria-label="Buscar">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+          <!-- El contenedor de resultados de búsqueda se insertará aquí mediante JavaScript -->
+        </div>
+      </div>
+      <div class="col-md-3 d-none d-md-block text-end">
+        <a href="https://www.instagram.com/nubez___uy" class="text-dark text-decoration-none" target="_blank">
+          <img src="fotos/icons8-instagram-48.png" width="32" height="32" alt="Instagram">
+        </a>
+      </div>
     </div>
-  </header>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Todos los productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mas vendido.html">Más vendidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novedades</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Adjust top margin to account for fixed header -->
+<div style="margin-top: 130px;"></div>
 
   <!-- MAIN -->
-  <main class="container flex-grow-1 mt-5 pt-5">
+  <main class="container flex-grow-1">
     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
 
 
@@ -225,8 +269,6 @@
   </main>
 
   <!-- FOOTER -->
-   
-<!-- FOOTER -->
 <footer class="bg-white text-center py-4 mt-auto">
     <div class="container">
         <p class="mb-1">© 2025 NUBEZ___UY</p>
@@ -242,6 +284,7 @@
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/search.js"></script>
   <script>
     document.querySelectorAll(".card").forEach(card => {
       if (card.id === "0") {
@@ -265,3 +308,8 @@
   
 </body>
 </html>
+
+
+
+
+
